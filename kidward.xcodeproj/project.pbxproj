@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		487263832B7A92EB0093ACD1 /* kidwardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263822B7A92EB0093ACD1 /* kidwardApp.swift */; };
+		487263852B7A92EB0093ACD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263842B7A92EB0093ACD1 /* ContentView.swift */; };
+		487263872B7A92EC0093ACD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487263862B7A92EC0093ACD1 /* Assets.xcassets */; };
+		4872638A2B7A92EC0093ACD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487263892B7A92EC0093ACD1 /* Preview Assets.xcassets */; };
+		4872638C2B7A92EC0093ACD1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872638B2B7A92EC0093ACD1 /* Persistence.swift */; };
+		4872638F2B7A92EC0093ACD1 /* kidward.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4872638D2B7A92EC0093ACD1 /* kidward.xcdatamodeld */; };
+		4872639B2B7A92EC0093ACD1 /* kidwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872639A2B7A92EC0093ACD1 /* kidwardTests.swift */; };
+		487263A52B7A92EC0093ACD1 /* kidwardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263A42B7A92EC0093ACD1 /* kidwardUITests.swift */; };
+		487263A72B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263A62B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		487263972B7A92EC0093ACD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 487263772B7A92EB0093ACD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4872637E2B7A92EB0093ACD1;
+			remoteInfo = kidward;
+		};
+		487263A12B7A92EC0093ACD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 487263772B7A92EB0093ACD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4872637E2B7A92EB0093ACD1;
+			remoteInfo = kidward;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4872637F2B7A92EB0093ACD1 /* kidward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidward.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		487263822B7A92EB0093ACD1 /* kidwardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidwardApp.swift; sourceTree = "<group>"; };
+		487263842B7A92EB0093ACD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		487263862B7A92EC0093ACD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		487263892B7A92EC0093ACD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4872638B2B7A92EC0093ACD1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4872638E2B7A92EC0093ACD1 /* kidward.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kidward.xcdatamodel; sourceTree = "<group>"; };
+		487263902B7A92EC0093ACD1 /* kidward.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kidward.entitlements; sourceTree = "<group>"; };
+		487263912B7A92EC0093ACD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487263962B7A92EC0093ACD1 /* kidwardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kidwardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4872639A2B7A92EC0093ACD1 /* kidwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidwardTests.swift; sourceTree = "<group>"; };
+		487263A02B7A92EC0093ACD1 /* kidwardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kidwardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		487263A42B7A92EC0093ACD1 /* kidwardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidwardUITests.swift; sourceTree = "<group>"; };
+		487263A62B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidwardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4872637C2B7A92EB0093ACD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487263932B7A92EC0093ACD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4872639D2B7A92EC0093ACD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		487263762B7A92EB0093ACD1 = {
+			isa = PBXGroup;
+			children = (
+				487263812B7A92EB0093ACD1 /* kidward */,
+				487263992B7A92EC0093ACD1 /* kidwardTests */,
+				487263A32B7A92EC0093ACD1 /* kidwardUITests */,
+				487263802B7A92EB0093ACD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		487263802B7A92EB0093ACD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4872637F2B7A92EB0093ACD1 /* kidward.app */,
+				487263962B7A92EC0093ACD1 /* kidwardTests.xctest */,
+				487263A02B7A92EC0093ACD1 /* kidwardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		487263812B7A92EB0093ACD1 /* kidward */ = {
+			isa = PBXGroup;
+			children = (
+				487263822B7A92EB0093ACD1 /* kidwardApp.swift */,
+				487263842B7A92EB0093ACD1 /* ContentView.swift */,
+				487263862B7A92EC0093ACD1 /* Assets.xcassets */,
+				4872638B2B7A92EC0093ACD1 /* Persistence.swift */,
+				487263902B7A92EC0093ACD1 /* kidward.entitlements */,
+				487263912B7A92EC0093ACD1 /* Info.plist */,
+				4872638D2B7A92EC0093ACD1 /* kidward.xcdatamodeld */,
+				487263882B7A92EC0093ACD1 /* Preview Content */,
+			);
+			path = kidward;
+			sourceTree = "<group>";
+		};
+		487263882B7A92EC0093ACD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				487263892B7A92EC0093ACD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		487263992B7A92EC0093ACD1 /* kidwardTests */ = {
+			isa = PBXGroup;
+			children = (
+				4872639A2B7A92EC0093ACD1 /* kidwardTests.swift */,
+			);
+			path = kidwardTests;
+			sourceTree = "<group>";
+		};
+		487263A32B7A92EC0093ACD1 /* kidwardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				487263A42B7A92EC0093ACD1 /* kidwardUITests.swift */,
+				487263A62B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift */,
+			);
+			path = kidwardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4872637E2B7A92EB0093ACD1 /* kidward */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487263AA2B7A92EC0093ACD1 /* Build configuration list for PBXNativeTarget "kidward" */;
+			buildPhases = (
+				4872637B2B7A92EB0093ACD1 /* Sources */,
+				4872637C2B7A92EB0093ACD1 /* Frameworks */,
+				4872637D2B7A92EB0093ACD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kidward;
+			productName = kidward;
+			productReference = 4872637F2B7A92EB0093ACD1 /* kidward.app */;
+			productType = "com.apple.product-type.application";
+		};
+		487263952B7A92EC0093ACD1 /* kidwardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487263AD2B7A92EC0093ACD1 /* Build configuration list for PBXNativeTarget "kidwardTests" */;
+			buildPhases = (
+				487263922B7A92EC0093ACD1 /* Sources */,
+				487263932B7A92EC0093ACD1 /* Frameworks */,
+				487263942B7A92EC0093ACD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				487263982B7A92EC0093ACD1 /* PBXTargetDependency */,
+			);
+			name = kidwardTests;
+			productName = kidwardTests;
+			productReference = 487263962B7A92EC0093ACD1 /* kidwardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4872639F2B7A92EC0093ACD1 /* kidwardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487263B02B7A92EC0093ACD1 /* Build configuration list for PBXNativeTarget "kidwardUITests" */;
+			buildPhases = (
+				4872639C2B7A92EC0093ACD1 /* Sources */,
+				4872639D2B7A92EC0093ACD1 /* Frameworks */,
+				4872639E2B7A92EC0093ACD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				487263A22B7A92EC0093ACD1 /* PBXTargetDependency */,
+			);
+			name = kidwardUITests;
+			productName = kidwardUITests;
+			productReference = 487263A02B7A92EC0093ACD1 /* kidwardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		487263772B7A92EB0093ACD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4872637E2B7A92EB0093ACD1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					487263952B7A92EC0093ACD1 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 4872637E2B7A92EB0093ACD1;
+					};
+					4872639F2B7A92EC0093ACD1 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 4872637E2B7A92EB0093ACD1;
+					};
+				};
+			};
+			buildConfigurationList = 4872637A2B7A92EB0093ACD1 /* Build configuration list for PBXProject "kidward" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 487263762B7A92EB0093ACD1;
+			productRefGroup = 487263802B7A92EB0093ACD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4872637E2B7A92EB0093ACD1 /* kidward */,
+				487263952B7A92EC0093ACD1 /* kidwardTests */,
+				4872639F2B7A92EC0093ACD1 /* kidwardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4872637D2B7A92EB0093ACD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4872638A2B7A92EC0093ACD1 /* Preview Assets.xcassets in Resources */,
+				487263872B7A92EC0093ACD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487263942B7A92EC0093ACD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4872639E2B7A92EC0093ACD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4872637B2B7A92EB0093ACD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4872638C2B7A92EC0093ACD1 /* Persistence.swift in Sources */,
+				487263852B7A92EB0093ACD1 /* ContentView.swift in Sources */,
+				4872638F2B7A92EC0093ACD1 /* kidward.xcdatamodeld in Sources */,
+				487263832B7A92EB0093ACD1 /* kidwardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487263922B7A92EC0093ACD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4872639B2B7A92EC0093ACD1 /* kidwardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4872639C2B7A92EC0093ACD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487263A52B7A92EC0093ACD1 /* kidwardUITests.swift in Sources */,
+				487263A72B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		487263982B7A92EC0093ACD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4872637E2B7A92EB0093ACD1 /* kidward */;
+			targetProxy = 487263972B7A92EC0093ACD1 /* PBXContainerItemProxy */;
+		};
+		487263A22B7A92EC0093ACD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4872637E2B7A92EB0093ACD1 /* kidward */;
+			targetProxy = 487263A12B7A92EC0093ACD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		487263A82B7A92EC0093ACD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		487263A92B7A92EC0093ACD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		487263AB2B7A92EC0093ACD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kidward/kidward.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kidward/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kidward/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LL.kidward;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		487263AC2B7A92EC0093ACD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kidward/kidward.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kidward/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kidward/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LL.kidward;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		487263AE2B7A92EC0093ACD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LL.kidwardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kidward.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kidward";
+			};
+			name = Debug;
+		};
+		487263AF2B7A92EC0093ACD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LL.kidwardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kidward.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kidward";
+			};
+			name = Release;
+		};
+		487263B12B7A92EC0093ACD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LL.kidwardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kidward;
+			};
+			name = Debug;
+		};
+		487263B22B7A92EC0093ACD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LL.kidwardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kidward;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4872637A2B7A92EB0093ACD1 /* Build configuration list for PBXProject "kidward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487263A82B7A92EC0093ACD1 /* Debug */,
+				487263A92B7A92EC0093ACD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487263AA2B7A92EC0093ACD1 /* Build configuration list for PBXNativeTarget "kidward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487263AB2B7A92EC0093ACD1 /* Debug */,
+				487263AC2B7A92EC0093ACD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487263AD2B7A92EC0093ACD1 /* Build configuration list for PBXNativeTarget "kidwardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487263AE2B7A92EC0093ACD1 /* Debug */,
+				487263AF2B7A92EC0093ACD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487263B02B7A92EC0093ACD1 /* Build configuration list for PBXNativeTarget "kidwardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487263B12B7A92EC0093ACD1 /* Debug */,
+				487263B22B7A92EC0093ACD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4872638D2B7A92EC0093ACD1 /* kidward.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4872638E2B7A92EC0093ACD1 /* kidward.xcdatamodel */,
+			);
+			currentVersion = 4872638E2B7A92EC0093ACD1 /* kidward.xcdatamodel */;
+			path = kidward.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 487263772B7A92EB0093ACD1 /* Project object */;
+}
