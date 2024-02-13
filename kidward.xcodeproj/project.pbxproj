@@ -16,6 +16,12 @@
 		4872639B2B7A92EC0093ACD1 /* kidwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4872639A2B7A92EC0093ACD1 /* kidwardTests.swift */; };
 		487263A52B7A92EC0093ACD1 /* kidwardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263A42B7A92EC0093ACD1 /* kidwardUITests.swift */; };
 		487263A72B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263A62B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift */; };
+		487263B42B7A95F90093ACD1 /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263B32B7A95F90093ACD1 /* Objective.swift */; };
+		487263B62B7A967D0093ACD1 /* ObjectivesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263B52B7A967D0093ACD1 /* ObjectivesViewModel.swift */; };
+		487263B82B7A97840093ACD1 /* AddObjectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263B72B7A97840093ACD1 /* AddObjectiveView.swift */; };
+		487263BA2B7A98260093ACD1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263B92B7A98260093ACD1 /* ProgressBar.swift */; };
+		487263BC2B7A9AF90093ACD1 /* EditObjectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263BB2B7A9AF90093ACD1 /* EditObjectiveView.swift */; };
+		487263C22B7ABF760093ACD1 /* EditObjectiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487263C12B7ABF760093ACD1 /* EditObjectiveViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		487263A02B7A92EC0093ACD1 /* kidwardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kidwardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		487263A42B7A92EC0093ACD1 /* kidwardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidwardUITests.swift; sourceTree = "<group>"; };
 		487263A62B7A92EC0093ACD1 /* kidwardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidwardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		487263B32B7A95F90093ACD1 /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
+		487263B52B7A967D0093ACD1 /* ObjectivesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesViewModel.swift; sourceTree = "<group>"; };
+		487263B72B7A97840093ACD1 /* AddObjectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddObjectiveView.swift; sourceTree = "<group>"; };
+		487263B92B7A98260093ACD1 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		487263BB2B7A9AF90093ACD1 /* EditObjectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditObjectiveView.swift; sourceTree = "<group>"; };
+		487263C12B7ABF760093ACD1 /* EditObjectiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditObjectiveViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,12 @@
 			children = (
 				487263822B7A92EB0093ACD1 /* kidwardApp.swift */,
 				487263842B7A92EB0093ACD1 /* ContentView.swift */,
+				487263B72B7A97840093ACD1 /* AddObjectiveView.swift */,
+				487263B92B7A98260093ACD1 /* ProgressBar.swift */,
+				487263BB2B7A9AF90093ACD1 /* EditObjectiveView.swift */,
+				487263C12B7ABF760093ACD1 /* EditObjectiveViewModel.swift */,
+				487263B32B7A95F90093ACD1 /* Objective.swift */,
+				487263B52B7A967D0093ACD1 /* ObjectivesViewModel.swift */,
 				487263862B7A92EC0093ACD1 /* Assets.xcassets */,
 				4872638B2B7A92EC0093ACD1 /* Persistence.swift */,
 				487263902B7A92EC0093ACD1 /* kidward.entitlements */,
@@ -267,9 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487263B62B7A967D0093ACD1 /* ObjectivesViewModel.swift in Sources */,
+				487263B42B7A95F90093ACD1 /* Objective.swift in Sources */,
 				4872638C2B7A92EC0093ACD1 /* Persistence.swift in Sources */,
+				487263B82B7A97840093ACD1 /* AddObjectiveView.swift in Sources */,
 				487263852B7A92EB0093ACD1 /* ContentView.swift in Sources */,
 				4872638F2B7A92EC0093ACD1 /* kidward.xcdatamodeld in Sources */,
+				487263BA2B7A98260093ACD1 /* ProgressBar.swift in Sources */,
+				487263BC2B7A9AF90093ACD1 /* EditObjectiveView.swift in Sources */,
+				487263C22B7ABF760093ACD1 /* EditObjectiveViewModel.swift in Sources */,
 				487263832B7A92EB0093ACD1 /* kidwardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +462,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kidward/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kidward;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,6 +494,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kidward/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kidward;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

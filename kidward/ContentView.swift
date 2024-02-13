@@ -6,81 +6,87 @@
 //
 
 import SwiftUI
-import CoreData
+
+enum ActiveSheet: Identifiable {
+    case addNew
+    case editObjective(Objective)
+
+    var id: String {
+        switch self {
+        case .addNew: return "addNew"
+        case .editObjective(let objective): return objective.id.uuidString
+        }
+    }
+}
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @StateObject var viewModel = ObjectivesViewModel()
+    @State private var activeSheet: ActiveSheet?
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    let pointsToAdd = [1, 5, 10, 25, 50] // Defined points to add
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                ForEach(viewModel.objectives) { objective in
+                    VStack(alignment: .leading) {
+                        Text(objective.title)
+                            .font(.headline)
+
+                        // Display the numeric progress
+                        Text("\(objective.currentPoints) points out of \(objective.goalPoints) Goal Points")
+                            .font(.subheadline)
+                            .padding(.bottom, 2)
+                        
+                        // ProgressBar view to visually represent progress
+                        ProgressBar(progress: Float(objective.currentPoints) / Float(objective.goalPoints))
+                            .frame(height: 10)
+
+                        // Point addition buttons
+                        HStack {
+                            ForEach(pointsToAdd, id: \.self) { points in
+                                Button(action: {
+                                    viewModel.addPoints(toObjectiveId: objective.id, points: points)
+                                }) {
+                                    Text("+\(points)")
+                                        .padding(5)
+                                        .background(Color.blue)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(5)
+                                }
+                            }
+                        }
+                        .padding(.top, 2) // Add some spacing above the point addition buttons
                     }
+                    .padding() // Add padding around each objective for better spacing
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteObjective)
             }
+            .navigationTitle("Objectives")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Button(action: {
+                        self.activeSheet = .addNew
+                    }) {
+                        Image(systemName: "plus")
                     }
                 }
             }
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        .sheet(item: $activeSheet) { item in
+            switch item {
+            case .addNew:
+                AddObjectiveView(viewModel: viewModel)
+            case .editObjective(let objective):
+                EditObjectiveView(objective: objective, viewModel: viewModel)
             }
         }
     }
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+    func deleteObjective(at offsets: IndexSet) {
+        viewModel.objectives.remove(atOffsets: offsets)
     }
-}
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+        }
+    
 
-#Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-}

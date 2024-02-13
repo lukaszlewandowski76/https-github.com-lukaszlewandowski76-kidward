@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Objective: Identifiable {
+    let id: UUID = UUID()
+    var title: String
+    var goalPoints: Int
+    var currentPoints: Int // Ensure this property is included
+}
+
+
+
+
